@@ -38,7 +38,7 @@ hola('Carlos', function (nombre) {
 });
 
 /*
-
+de esta manera por cada funcion hablar tenias que poner la funcion.
 hola('Carlos', function (nombre) {
     hablar(function() {
         hablar(function() {
