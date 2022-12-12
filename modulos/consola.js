@@ -1,10 +1,10 @@
-/* 
+ 
 console.log('Algo');
 console.info('Algo');
 console.error('Algo');
 console.warn('Algo');
 console.table(tabla);
-*/
+
 
 var tabla = [
 {
@@ -16,7 +16,7 @@ var tabla = [
     b: 'A',
 }
 ]
-/*
+
 console.group('conversacion');
 console.log('Hola');
 console.group('Hablar')
@@ -26,7 +26,7 @@ console.log('Bla Bla bla..');
 console.groupEnd('Hablar')
 console.log('Adios');
 console.groupEnd('conversacion');
-console.log('Otra funcion'); */
+console.log('Otra funcion'); 
 
 function funcion1() {
     console.group('funcion 1');
@@ -46,10 +46,10 @@ function funcion2() {
 
 console.log('empezamos');
 funcion1();
-/*
+
 console.count('Veces:');
 console.count('Veces:');
 console.count('Veces:');
 console.count('Veces:');
 console.countReset('Veces:');
-console.count('Veces:'); */
+console.count('Veces:'); 
