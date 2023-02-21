@@ -9,7 +9,7 @@ function hablar(callbackHablar) {
     setTimeout(function() {
         console.log('Bla bla bla..');
         callbackHablar();
-    }, 2000)
+    }, 1000)
 }
 
 function adios(nombre, otroCallback) {
@@ -32,7 +32,7 @@ function conversacion(nombre, veces, callback) {
 // --
 console.log('Iniciando un proceso...');
 hola('Carlos', function (nombre) {
-    conversacion(nombre, 3, function() {
+    conversacion(nombre, 5, function() {
         console.log('Proceso terminado');
     });
 });

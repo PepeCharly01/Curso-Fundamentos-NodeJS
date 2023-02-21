@@ -3,7 +3,7 @@ async function hola(nombre) {
         setTimeout(function () {
             console.log(`Hola, ${nombre}`);
             resolve(nombre);
-        }, 2000)
+        }, 1000)
     });
 }
 
@@ -13,7 +13,7 @@ async function hablar(nombre) {
             console.log('Bla bla bla..');
            resolve(nombre);
            reject('Hay un error');
-        }, 2000)
+        }, 1000)
     });
     
 }
@@ -23,12 +23,14 @@ async function adios(nombre) {
         setTimeout(function() {
             console.log(`Adios, ${nombre}`);
             resolve();
-        }, 2000);
+        }, 1500);
     });
 }
 
 async function main() {
     let nombre = await hola('Carlos');
+    await hablar();
+    await hablar();
     await hablar();
     await hablar();
     await hablar();

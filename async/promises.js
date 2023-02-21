@@ -13,7 +13,7 @@ function hablar(nombre) {
             console.log('Bla bla bla..');
            resolve(nombre);
            reject('Hay un error');
-        }, 2000)
+        }, 1000)
     });
     
 }
@@ -31,6 +31,8 @@ function adios(nombre) {
 
 console.log('Iniciando el proceso..');
 hola('Carlos')
+    .then(hablar)
+    .then(hablar)
     .then(hablar)
     .then(hablar)
     .then(hablar)
