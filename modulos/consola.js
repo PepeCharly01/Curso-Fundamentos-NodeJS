@@ -40,7 +40,7 @@ function funcion1() {
 
 function funcion2() {
     console.group('funcion 2');
-    console.log('Ahora estamos en la funcion 2');
+    console.log('Ahora estamos en la Funcion 2');
     console.groupEnd('funcion 2');
 }
 
