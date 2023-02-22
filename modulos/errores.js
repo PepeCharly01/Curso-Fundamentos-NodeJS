@@ -11,14 +11,14 @@ function seRompeAsincrona(cb) {
         try {
         return 3 + z;
         } catch (err) {
-            console.error('Error en la funcion asincrona');
+            console.error('Error en la función asíncrona :(');
             cb(err);
         }
     })
 }
 
 try {
-   // otraFuncion();
+    // otraFuncion();
     seRompeAsincrona(function(err) {
         console.log(err.message);
     });
